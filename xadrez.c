@@ -1,32 +1,52 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main(){
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+//DEFINIÇÃO  PARA O NUMERO DE CASAS QUE CADA PECA DEVE MOVER
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+int casastorre = 5;
+int casasbispo = 5;
+int casasrainha = 8;
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+// MOVIMENTAÇÃO TORRE USANDO "FOR"
+ // criar (int sempre antes para direcionar o codigo)
+for (int i = 1; i <= casastorre; i++)
+{
+    printf("Direita\n");
+}
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+//MOVIMENTAÇÃO BISPO USANDO "WHILE"
+ // criar (int sempre antes para direcionar o codigo)
+int contadorbispo = 1;
+
+while (contadorbispo <= casasbispo)
+{
+   printf("Cima Direita\n");
+
+   contadorbispo++; //INCREMENTO DE PARADA
+
+}
+
+
+
+    //MOVIMENTAÇÃO DA RAINHA EM "DO-WHILE"
+    // criar (int sempre antes para direcionar o codigo)
+        int contadorrainha = 1;
+
+    do
+    {
+        printf("Esquerda\n");
+        contadorrainha++;
+    } while (contadorrainha <= casasrainha);
+    
+
+
+
+
 
     return 0;
+
 }
