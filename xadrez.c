@@ -8,6 +8,7 @@ int main(){
 int casastorre = 5;
 int casasbispo = 5;
 int casasrainha = 8;
+int casascavalocompleto = 1;
 
 // MOVIMENTAÇÃO TORRE USANDO "FOR"
  // criar (int sempre antes para direcionar o codigo)
@@ -42,6 +43,16 @@ while (contadorbispo <= casasbispo)
         contadorrainha++;
     } while (contadorrainha <= casasrainha);
     
+
+    
+    while (casascavalocompleto--){
+
+        for(int i = 0; i < 2; i++){
+
+            printf("Cima\n"); //IMPRIME DUAS DUAS VESES "CIMA"
+        }
+        printf("Direita\n"); //IMPRIME UMA VEZ "DIREITA"
+    }
 
 
 
